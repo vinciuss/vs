@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+	<head>
+	<title>Cadastrando Produtos</title>
+	<meta charset="UTF-8"/>
+	</head>
+	<body>
+      <main>
+        <div align="center">
+        <h1>CADASTRANDO UM PRODUTO</h1>
+      <form accept-charset="UTF-8" autocomplete="on">
+        <fieldset>
+          <legend><strong>INFORMAÇÕES PRINCIPAIS</strong></legend>
+          Produto ativado?
+          <select>
+            <option value="sim">Sim</option>
+            <option value="nao">Não</option>
+          </select>
+          <input type="radio" name="prodnovo" checked="checked"/>Produto novo
+          <input type="radio" name="prodnovo"/>Produto usado
+          <br/>
+          <br/>
+          <label for="nomeProduto">Nome do produto </label>
+          <input type="text" placeholder="Digite aqui" maxlength="50" id="nomeProduto"/>
+          <br/>
+          <br/>
+          <label for="codProduto">Código do produto </label>
+          <input type="text" placeholder="Digite aqui" maxlength="10" id="codProduto"/>
+          <label for="ncm">NCM </label>
+          <input type="text" placeholder="Digite aqui" maxlength="10" id="ncm"/>
+          <br/>
+          <br/>
+          <label for="precoCusto"/>Preço de custo <input type="text" id="precoCusto"/>
+          <label for="dtPrecoCusto"/>Data do Preço de Custo <input type="date" id="dtPrecoCusto"/>
+          <br/>
+          <br/>
+          <label for="precoVenda"/>Preço de venda <input type="text" id="precoVenda"/>
+          <label for="dtPrecoVenda"/>Data do Preço de Venda <input type="date" id="dtPrecoVenda"/>
+		</fieldset>
+        <br/>
+        <fieldset>
+          <legend><strong>INFORMAÇÕES GERAIS</strong></legend>
+          Marca
+          <select>
+            <option value="">Nenhum</option>
+            <option value="marca1">Marca do Produto 01</option>
+            <option value="marca2">Marca do Produto 02</option>
+            <option value="marca3">Marca do Produto 03</option>
+            <option value="marca4">Marca do Produto 04</option>
+            <option value="marca5">Marca do Produto 05</option>
+          </select>
+          Categoria
+          <select>
+            <option value="">Nenhum</option>
+            <option value="categoria1">Categoria do Produto 01</option>
+            <option value="categoria2">Categoria do Produto 02</option>
+            <option value="categoria3">Categoria do Produto 03</option>
+          </select>
+          <br/>
+          <br/>
+          URL do vídeo do produto <input type="file" />
+          <br/>
+          <br/>
+          Descrição completa
+          <br/>
+          <textarea rows="5" cols="88"></textarea>
+        </fieldset>
+        <br/>
+        <fieldset>
+          <legend><strong>PESOS E DIMENSÕES</strong></legend>
+          Peso <input type="text" maxlength="10"/>
+          Altura <input type="text" maxlength="10"/>
+          Largura <input type="text" maxlength="10"/>
+          Profundidade <input type="text" maxlength="10"/>
+        </fieldset>
+        <br/>
+        <input type="submit" value="Cadastrar"/>
+        <input type="reset" value="Apagar"/>
+
+        </form>  
+      	</main>
+   </body>
+</html>
