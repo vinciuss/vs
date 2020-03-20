@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+	<head>
+      <title>Anúncio de Produtos</title>
+      <meta charset="UTF-8"/>
+	</head>
+	<body>
+	<main>
+
+    <div align="center">
+        <h1>ANÚNCIO DO PRODUTO</h1>
+        <fieldset>
+          <legend><strong>INFORMAÇÕES PRINCIPAIS</strong></legend>
+          <input type="radio" name="prodnovo" checked="checked"/>Produto novo
+          <input type="radio" name="prodnovo"/>Produto usado
+          <br/>
+          <br/>
+          Produto:
+          <input type="text" placeholder="Digite aqui" maxlength="50" id="nomeProduto">
+          Código do produto:
+          <input type="text" placeholder="Digite aqui" maxlength="10" id="codProduto">
+          <br/>
+          <br/>
+          <label for="precoVenda"/>Preço <input type="text" id="precoVenda">
+          <input type="button" value="Comprar"/>
+		</fieldset>
+        <br/>
+        <fieldset>
+          <legend><strong>FORMAS DE PAGAMENTO</strong></legend>
+          Cartão de Crédito:  <label for="precoVenda"/><input type="text" id="precoVenda">
+          <select>
+            <option value="visa">VISA</option>
+            <option value="master">MASTERCARD</option>
+            <option value="hipercad">HIPERCARD</option>
+            <option value="amex">AMERICAN EXPRESS</option>
+            <option value="elo">ELO</option>
+          </select>
+          <br/>
+          <br/>
+          <hr/>
+          Boleto (10% de desconto):  <label for="precoVenda"/> <input type="text" id="precoVenda">
+        </fieldset>
+        <br/>
+        <fieldset>
+          <legend><strong>FRETE</strong></legend>
+          Calcule o frete: <input type="text" placeholder="CEP" maxlength="8"/>
+          <input type="button" value="OK"/>
+        </fieldset>
+        <br/>
+        <fieldset>
+          <legend><strong>INFORMAÇÕES GERAIS</strong></legend>
+          <label for="marca"/>Marca: <input type="text" id="marca">
+          <label for="marca"/>Categoria: <input type="text" id="categoria" >
+          <br/>
+          <br/>
+          Vídeo do produto:
+          <br/>
+          <textarea rows="10" cols="44" ></textarea>
+          <br/>
+          <br/>
+          Descrição completa
+          <br/>
+          <textarea rows="5" cols="88" ></textarea>
+        </fieldset>
+        <br/>
+        <fieldset>
+          <legend><strong>PESOS E DIMENSÕES</strong></legend>
+          Peso <input type="text" maxlength="10">
+          Altura <input type="text" maxlength="10" >
+          Largura <input type="text" maxlength="10">
+          Profundidade <input type="text" maxlength="10">
+        </fieldset>
+        <br/>
+      </main>
+	</body>
+</html>

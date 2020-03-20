@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Cadastrando Clientes</title>
+    <meta charset="UTF-8"/>
+  </head>
+  <body>
+    <main>
+      <div align="center">
+      <h1>IDENTIFICAÇÃO DO CLIENTE</h1>
+      <form accept-charset="UTF-8" autocomplete="on">
+      <fieldset>
+        <legend><strong>Dados para acesso</strong></legend>
+        Email <input type="email"/>
+        Confirmar e-mail <input type="email"/>
+        <br/>
+        <br/>
+        Crie uma senha <input type="password"/>
+        Confirmar senha <input type="password"/>
+      </fieldset>
+      <br/>
+      <fieldset>
+        <legend><strong>Tipo de cadastro</strong></legend>
+        <input type="radio" name="tipoCad" checked="checked"/> Pessoa Física
+        <input type="radio" name="tipoCad"/> Pessoa Jurídica
+      </fieldset>
+      <br/>
+      <fieldset>
+        <legend><strong>Dados Pessoais</strong></legend>
+        <label for="nomeC"><strong>Nome completo </strong></label> 
+        <input type="<text>" maxlength="100" id="nomeC" required="required"/>
+        <br/>
+        <br/>
+        <label for="cpf"><strong>CPF </strong></label> 
+        <input type="<text>" maxlength="11" id="cpf" required="required"/>
+        <br/>
+        <br/>
+        <label for="cel"><strong>Celular </strong></label> 
+        <input type="tel" id="cel" required="required"/>
+        <br/>
+        <br/>
+        <label for="telFixo">Telefone fixo </label> 
+        <input type="tel" id="telFixo"/>
+        <br/>
+        <br/>
+        Sexo
+        <select>
+          <option value="selecione"/>-Selecione-
+          <option value="masculino"/>Masculino
+          <option value="feminino"/>Feminino
+        </select>
+        <br/>
+        <br/>
+        Data de nascimento 
+        <input type="date"/>
+      </fieldset>
+      <br/>
+      <fieldset>
+        <legend><strong>Endereço</strong></legend>
+        <label for="cep"><strong>CEP </strong></label> 
+        <input type="text" maxlength="8" id="cep" required="required"/>
+        <a href="http://www.buscacep.correios.com.br/sistemas/buscacep/" target="_blank">Não sei o meu CEP</a>
+        <br/>
+        <br/>
+        <label for="logradouro"><strong>Logradouro </strong></label> 
+        <input type="text" maxlength="100" id="logradouro" required="required"/>
+        <br/>
+        <br/>
+        <label for="numero"><strong>Número </strong></label> 
+        <input type="text" maxlength="10" id="numero"/>
+        <br/>
+        <br/>
+        <label for="compl">Complemento </label> 
+        <input type="text" maxlength="50" id="compl"/>
+        <br/>
+        <br/>
+        <label for="ref">Referência </label> 
+        <input type="text" maxlength="50" id="ref"/>
+        <br/>
+        <br/>
+        <label for="bairro"><strong>Bairro </strong></label> 
+        <input type="text" maxlength="25" id="bairro" required="required"/>
+        <br/>
+        <br/>
+        <label for="cidade"><strong>Cidade </strong></label> 
+        <input type="text" maxlength="50" id="cidade" required="required"/>
+        <br/>
+        <br/>
+        <strong>Estado</strong>
+        <select>
+          <option value="ac">Acre</option>
+          <option value="al">Alagoas</option>
+          <option value="ap">Amapá</option>
+          <option value="am">Amazonas</option>
+          <option value="ba">Bahia</option>
+          <option value="ce">Ceará</option>
+          <option value="df">Distrito Federal</option>
+          <option value="es">Espírito Santo</option>
+          <option value="go">Goiás</option>
+          <option value="ma">Maranhão</option>
+          <option value="mt">Mato Grosso</option>
+          <option value="ms">Mato Grosso do Sul</option>
+          <option value="mg">Minas Gerais</option>
+          <option value="pa">Pará</option>
+          <option value="pb">Paraíba</option>
+          <option value="pr">Paraná</option>
+          <option value="pe">Pernambuco</option>
+          <option value="pi">Piauí</option>
+          <option value="rj">Rio de Janeiro</option>
+          <option value="rn">Rio Grande do Norte</option>
+          <option value="rs">Rio Grande do Sul</option>
+          <option value="ro">Rondônia</option>
+          <option value="rr">Roraima</option>
+          <option value="sc">Santa Catarina</option>
+          <option value="sp">São Paulo</option>
+          <option value="se">Sergipe</option>
+          <option value="to">Tocatins</option>
+        </select>
+      </fieldset>
+      <br/>
+      <input type="submit" value="Criar conta"/>
+      <input type="reset" value="Apagar"/>
+    
+      </form>
+    </main>
+  </body>
+</html>
